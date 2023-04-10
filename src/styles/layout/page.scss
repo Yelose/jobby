@@ -1,0 +1,27 @@
+.app-page {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  max-width: 1400px;
+  margin: auto;
+  background-color: $base-light;
+  border: 1px solid $base-dark;
+  border-radius: 7px;
+  padding: 3vh 3vw;
+
+  position: relative;
+
+  &__header {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__content {
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

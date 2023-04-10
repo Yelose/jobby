@@ -1,0 +1,15 @@
+<br /><br />
+
+<h2>Form</h2>
+<br />
+<form [formGroup]="form" novalidate autocomplete="off" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="outline">
+    <mat-label>Input</mat-label>
+    <input matInput placeholder="input" />
+  </mat-form-field>
+</form>
+<code>
+  {{ form.value | json }}
+  {{ form.touched }}
+  {{ form.dirty }}
+</code>

@@ -1,0 +1,10 @@
+@import "../../../styles/mixins.scss";
+.header {
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vh 4vw;
+}
+
+.shadow {
+  @include shadow;
+}

@@ -1,0 +1,8 @@
+@import "../../../../../styles/mixins.scss";
+
+.shadow {
+  @include shadow;
+}
+.card {
+  @include card;
+}

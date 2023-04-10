@@ -1,0 +1,73 @@
+@use "@angular/material" as mat;
+
+@include mat.core();
+
+$green-palette: (
+  50: #d6fbf6,
+  100: #96f5e4,
+  200: #02eed2,
+  300: #00e2be,
+  400: #00d6ae,
+  500: #00ca9d,
+  600: #00bb8e,
+  700: #00a97c,
+  800: #00986d,
+  900: #00794c,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: #fff,
+    400: #fff,
+    500: #fff,
+    600: #fff,
+    700: #fff,
+    800: #fff,
+    900: #fff,
+  ),
+);
+
+$orange-palette: (
+  50: #fffae1,
+  100: #fff1b2,
+  200: #ffe882,
+  300: #ffe04f,
+  400: #ffd726,
+  500: #ffcf00,
+  600: #ffc100,
+  700: #ffad00,
+  800: #ff9c00,
+  900: #ff7d00,
+  contrast: (
+    50: rgba(black, 0.87),
+    100: rgba(black, 0.87),
+    200: rgba(black, 0.87),
+    300: rgba(black, 0.87),
+    400: #fff,
+    500: #fff,
+    600: #fff,
+    700: #fff,
+    800: #fff,
+    900: #fff,
+  ),
+);
+
+$primary-palette: $green-palette;
+$secondary-palette: $orange-palette;
+
+$mat-primary: mat.define-palette($primary-palette, 200);
+$mat-secondary: mat.define-palette($secondary-palette, 500);
+
+$light-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $mat-primary,
+      accent: $mat-secondary,
+    ),
+    density: 0,
+  )
+);
+
+@include mat.core-theme($light-theme);
+
+@include mat.all-component-themes($light-theme);
