@@ -97,8 +97,21 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "jobby:build:production",
+            "firebaseProject": "yelose-jobby",
+            "firebaseHostingSite": "yelose-jobby"
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "ffd0e62d-07b0-4e12-8923-ca09772ae711"
   }
 }

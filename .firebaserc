@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "yelose-jobby": {
+      "hosting": {
+        "jobby": [
+          "yelose-jobby"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "yelose-jobby"
+  }
+}
